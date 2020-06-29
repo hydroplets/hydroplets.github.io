@@ -91,10 +91,14 @@ body {
 
 /* Sidenav */
 
-
-h1 {
-  font: normal 5vmax 'Raleway', sans-serif;
+#container h1 {
+  font: normal 7vmin 'Raleway', sans-serif;
   text-align: right;
+}
+
+.background h1 {
+  font: normal 64px 'Raleway', sans-serif;
+  text-align: center;
 }
 
 h3 {
@@ -105,7 +109,7 @@ h3 {
 
 section {
   /* position: relative; */
-  display: flex;
+  /* display: flex; */
   width: 100%;
   height: auto;
   /* min-height: 90%; */
@@ -121,8 +125,8 @@ section {
 } */
 
 #container {
-  padding: 24px;
-  /* width: 100%; */
+  /* padding: 24px; */
+  width: 100%;
   /* top: 0;
   left: 0; */
   text-align: center;
@@ -177,13 +181,18 @@ p {
 #section1 {
   background: linear-gradient(to right, #ece9e6, #ffffff);
   color: black;
-  min-height: 60%;
+  display: flex;
+  min-height: 80%;
+}
+
+#section1 p {
+  padding: 16px;
 }
 
 #section1 .background {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   height: 100%;
   background-color: black;
@@ -196,13 +205,13 @@ p {
   color: white;
   display: flex;
   flex-direction: row-reverse;
-  min-height: 60%;
+  /* min-height: 60%; */
 }
 
 #section2 .background {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   height: 100%;
   background-color: black;
@@ -211,14 +220,15 @@ p {
 }
 
 #section3 {
-  background: linear-gradient(to right, #ece9e6, #ffffff);
+  background: black;
+  display: flex;
   min-height: 60%;
 }
 
 #section3 .background {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   height: 100%;
   background-color: black;
@@ -228,7 +238,7 @@ p {
 
 #section4 {
   background: linear-gradient(to right, #141e30, #243b55);
-  min-height: 60%;
+  /* min-height: 60%; */
   color: white;
   display: flex;
   flex-direction: row-reverse;
@@ -237,7 +247,7 @@ p {
 #section4 .background {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   height: 100%;
   background-color: black;
@@ -247,7 +257,19 @@ p {
 
 #section5 {
   background: linear-gradient(to right, #ece9e6, #ffffff);
-  /* min-height: 60%; */
+  display: flex;
+  min-height: 60%;
+}
+
+#section5 .background {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 24px;
 }
 
 
@@ -274,7 +296,7 @@ p {
   background: white;
   color: black;
   margin: 20px;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
   display: inline-block;
   transition: 0.3s;
   border-radius: 5px;
@@ -293,6 +315,24 @@ p {
 /* team cards */
 
 
+/* carousel */
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 60vh;
+  object-fit: fill;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* carousel */
+
 /* testimonies */
 
 #testimonies {
@@ -305,8 +345,8 @@ p {
 
 .flip-card {
   background-color: transparent;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   border-radius: 5px;
   /* border: 1px solid #f1f1f1; */
   margin: 10px;
@@ -314,9 +354,10 @@ p {
 }
 
 .flip-card-front img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .flip-card-inner {
@@ -367,7 +408,6 @@ p {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
-
 
 /* testimonies */
 
@@ -480,7 +520,6 @@ Responsive Stuff
     background-color: black;
   } */
 
-
   #teammembers {
     padding: 5%;
     display: flex;
@@ -498,6 +537,108 @@ Responsive Stuff
     justify-content: center;
     align-items: center;
     background-color: none;
+  }
+
+
+  #section1 {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 60%; */
+  }
+  
+  #section1 .background {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* height: 100%; */
+    background-color: black;
+    color: white;
+    padding: 24px;
+  }
+  
+  
+  #section2 {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  #section2 .background {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* height: 100%; */
+    background-color: black;
+    color: white;
+    padding: 24px;
+  }
+  
+  #section3 {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 60%; */
+  }
+  
+  #section3 .background {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* height: 100%; */
+    background-color: black;
+    color: white;
+    padding: 24px;
+  }
+  
+  #section4 {
+    background: linear-gradient(to right, #141e30, #243b55);
+    /* min-height: 60%; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #section4 .background {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* height: 100%; */
+    background-color: black;
+    color: white;
+    padding: 24px;
+  }
+  
+  #section5 {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    display: flex;
+    flex-direction: column;
+    /* min-height: 60%; */
+  }
+  
+  #section5 .background {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* height: 100%; */
+    background-color: black;
+    color: white;
+    padding: 24px;
+  }
+
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
   }
 
 
