@@ -12,6 +12,9 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8WNcvk8qzwdicwj8IJ-hxYCxHgiUxcEc&callback=initMap">
+    </script>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -189,7 +192,21 @@
                 <h1>CONTACT</h1>
             </div>
             <div id="container">
-                
+                <div id="form">
+                    <h3>Hit us up!</h3>
+                    <form action="#">
+                        <input type="text" placeholder="Name" name="name" />  <br>
+                        <input type="email" placeholder="E-mail" name="email" /> <br>
+                        <textarea type="text" placeholder="Message" name="message" style="height: 100px"></textarea> <br>
+                        <input type="submit" value="Submit" style="width: 30%;"/>
+                    </form>  
+                </div>
+                <h3>OR</h3>
+                <div id="details">
+                    <h3>Find us here:</h3>
+                    <div id="map"></div>
+                    <p>123, ABC Street, XYZ <br> Mobile: 1234567890</p>
+                </div>
             </div>
         </section>
 
