@@ -1,3 +1,13 @@
+var submitted = false;
+console.log(submitted);
+var form = document.getElementById('gform');
+
+function submitForm(e) {
+  submitted=true;
+  alert("Submitted successfully");
+}
+
+
 function initMap() {
   var head = document.getElementsByTagName("head")[0];
 

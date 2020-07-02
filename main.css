@@ -34,6 +34,7 @@ body {
 }
 
 #sections {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -92,7 +93,7 @@ body {
 /* Sidenav */
 
 #container h1 {
-  font: normal 7vmin "Raleway", sans-serif;
+  font: normal 9vw "Raleway", sans-serif;
   text-align: right;
 }
 
@@ -102,7 +103,7 @@ body {
 }
 
 #home h3 {
-  font: normal 3vmax "Roboto", sans-serif;
+  font: normal 6vw "Roboto", sans-serif;
   text-align: right;
 }
 
@@ -134,6 +135,7 @@ section {
   /* top: 0;
   left: 0; */
   text-align: center;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,16 +185,17 @@ p {
 #section1 {
   background: linear-gradient(to right, #ece9e6, #ffffff);
   color: black;
+  display: -webkit-flex;
   display: flex;
-  min-height: 80%;
 }
 
 #section1 p {
-  padding: 16px;
+  padding: 32px;
 }
 
 #section1 .background {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,13 +208,15 @@ p {
 #section2 {
   background: linear-gradient(to right, #141e30, #243b55);
   color: white;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row-reverse;
   /* min-height: 60%; */
 }
 
 #section2 .background {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,18 +227,21 @@ p {
 }
 
 #section2 #container {
+  display: -webkit-flex;
   display: flex;
 }
 
 
 #section3 {
   background: black;
+  display: -webkit-flex;
   display: flex;
   min-height: 60%;
 }
 
 #section3 .background {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,12 +255,14 @@ p {
   background: linear-gradient(to right, #141e30, #243b55);
   /* min-height: 60%; */
   color: white;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row-reverse;
 }
 
 #section4 .background {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,6 +273,7 @@ p {
 }
 
 #section4 #container {
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -270,12 +281,14 @@ p {
 
 #section5 {
   background: linear-gradient(to right, #ece9e6, #ffffff);
+  display: -webkit-flex;
   display: flex;
   /* min-height: 60%; */
 }
 
 #section5 .background {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,6 +302,7 @@ p {
 
 #teammembers {
   padding: 5%;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,8 +310,9 @@ p {
 }
 
 .card img {
-  width: 200px;
-  background-color: white;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 
@@ -347,6 +362,7 @@ p {
 
 #testimonies {
   padding: 5%;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,6 +417,7 @@ p {
 
 .flip-card-back {
   border-radius: 5px;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,6 +442,7 @@ p {
 /* contact */
 
 #form {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -459,6 +477,7 @@ form input:focus, textarea:focus {
 }
 
 #details {
+  display: -webkit-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,11 +631,11 @@ Responsive Stuff
   }
 
   #section1 .background {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-items: center;
     align-items: center;
-    /* height: 100%; */
+    height: auto;
     background-color: black;
     color: white;
     padding: 24px;
@@ -631,7 +650,7 @@ Responsive Stuff
   }
 
   #section2 .background {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-items: center;
     align-items: center;
@@ -649,7 +668,7 @@ Responsive Stuff
   }
 
   #section3 .background {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-items: center;
     align-items: center;
@@ -668,7 +687,7 @@ Responsive Stuff
   }
 
   #section4 .background {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-items: center;
     align-items: center;
@@ -686,7 +705,7 @@ Responsive Stuff
   }
 
   #section5 .background {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-items: center;
     align-items: center;
